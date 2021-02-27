@@ -49,8 +49,8 @@ function storeFormData() {
     website: form.website.value,
     password: form.password.value,
   };
-  
-  console.log(user);
+  form.reset();
+  form.hidden = true;
 }
 
 function processFormData(e) {
